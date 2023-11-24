@@ -34,7 +34,7 @@ function NameTag({
         <Info>
           <h2>{name}</h2>
           <p>{snsID}</p>
-          <ul>
+          <ul className="infoUl">
             <li>
               <b>{posts}</b>posts
             </li>
@@ -87,8 +87,12 @@ const NameTagStyle = styled.div`
     border-radius: 50%;
     margin-right: 20px;
   }
+  h2 {
+    margin-bottom: 10px;
+  }
   p {
     color: gray;
+    margin: 0;
   }
   .inputBTn {
     background-color: rgb(169, 210, 254);
@@ -111,14 +115,17 @@ const NameTagStyle = styled.div`
   }
 `;
 const Info = styled.div`
-  ul {
-    margin-top: 10px;
+  width: 100%;
+  .infoUl {
     background-color: white;
+    margin-top: 10px;
+    width: 100%;
   }
   li {
     font-size: 14px;
     color: lightgrey;
     padding-right: 20px;
+    background-color: white;
   }
   b {
     color: grey;

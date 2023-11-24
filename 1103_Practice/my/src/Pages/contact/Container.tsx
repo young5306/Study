@@ -62,6 +62,8 @@ const ContainerStyle = styled.div`
     width: 100%;
   }
   fieldset {
+    background-color: white;
+    padding-top: 0;
     border: 0;
   }
   legend {
@@ -71,18 +73,17 @@ const ContainerStyle = styled.div`
     text-align: center;
   }
   ul {
+    background-color: white;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
-  li {
-    width: 100%;
-    background-color: white;
-  }
+
   input {
     width: 100%;
     height: 60px;
     border: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lightgrey;
   }
   button {
     display: block;
